@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Smoke_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Smoke Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Shanti Tammana\AppData\Local\Temp\testng-eclipse--305919951\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Smoke_Suite" class="navigator-link ">
+                    <span>C:\Users\Shanti Tammana\git\repository\GitHubAPIAutomation\src\test\resources\TestNG_XMLs\SmokeSuiteFunctionality.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Smoke_Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Smoke_Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Smoke_Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Smoke_Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Smoke_Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Smoke_Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,21 +91,65 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">8 methods, 5 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Smoke_Suite" class="hide-methods failed suite-Smoke_Suite"> (hide)</a> <!-- hide-methods failed suite-Smoke_Suite -->
+                      <a href="#" panel-name="suite-Smoke_Suite" class="show-methods failed suite-Smoke_Suite"> (show)</a> <!-- show-methods failed suite-Smoke_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Smoke_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Suite" title="org.github.tests.ValidateAddUpdateDeleteRepo_Functionality" class="method navigator-link" hash-for-method="validateCreateRepoFunc_ExistingRepoName">validateCreateRepoFunc_ExistingRepoName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Suite" title="org.github.tests.ValidateAddUpdateDeleteRepo_Functionality" class="method navigator-link" hash-for-method="validateCreateRepoFunctionality1">validateCreateRepoFunctionality1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Suite" title="org.github.tests.ValidateAddUpdateDeleteRepo_Functionality" class="method navigator-link" hash-for-method="validateDeleteRepo">validateDeleteRepo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Suite" title="org.github.tests.ValidateGetRepo_Functionality" class="method navigator-link" hash-for-method="validateGetAllRepositories">validateGetAllRepositories</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Suite" title="org.github.tests.ValidateAddUpdateDeleteRepo_Functionality" class="method navigator-link" hash-for-method="validateUpdateRepoFunctionality">validateUpdateRepoFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Smoke_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Smoke_Suite" class="hide-methods passed suite-Smoke_Suite"> (hide)</a> <!-- hide-methods passed suite-Smoke_Suite -->
+                      <a href="#" panel-name="suite-Smoke_Suite" class="show-methods passed suite-Smoke_Suite"> (show)</a> <!-- show-methods passed suite-Smoke_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Smoke_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.github.tests.ValidateAddUpdateDeleteRepo_Functionality" class="method navigator-link" hash-for-method="validateDeleteRepo_NonExistentRepo">validateDeleteRepo_NonExistentRepo</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Smoke_Suite" title="org.github.tests.ValidateAddUpdateDeleteRepo_Functionality" class="method navigator-link" hash-for-method="validateDeleteRepo_NonExistentRepo">validateDeleteRepo_NonExistentRepo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Suite" title="org.github.tests.ValidateGetRepo_Functionality" class="method navigator-link" hash-for-method="validateGetRepo_InvalidRepo">validateGetRepo_InvalidRepo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Suite" title="org.github.tests.ValidateGetRepo_Functionality" class="method navigator-link" hash-for-method="validateGetSingleRepo">validateGetSingleRepo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Smoke_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,8 +160,125 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Smoke_Suite" class="panel Smoke_Suite">
+          <div class="suite-Smoke_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.github.tests.ValidateGetRepo_Functionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateGetAllRepositories">
+                  </a> <!-- validateGetAllRepositories -->
+                  <span class="method-name">validateGetAllRepositories</span>
+                  <div class="stack-trace">org.json.JSONException: A JSONObject text must begin with &apos;{&apos; at 1 [character 2 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:433)
+	at org.json.JSONObject.&lt;init&gt;(JSONObject.java:195)
+	at org.github.utils.JsonSchemaValidate.validateSchema(JsonSchemaValidate.java:23)
+	at org.github.tests.ValidateGetRepo_Functionality.validateGetAllRepositories(ValidateGetRepo_Functionality.java:83)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Suite-class-failed -->
+          <div class="suite-Smoke_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.github.tests.ValidateAddUpdateDeleteRepo_Functionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateCreateRepoFunc_ExistingRepoName">
+                  </a> <!-- validateCreateRepoFunc_ExistingRepoName -->
+                  <span class="method-name">validateCreateRepoFunc_ExistingRepoName</span>
+                  <div class="stack-trace">java.lang.AssertionError: create new repo functionality is failing due to :: Invalid number of path parameters. Expected 0, was 2. Redundant path parameters are: owner=RenuDix, repo=Fakercom.github.javafaker.FunnyName@3b4ef59f.
+	at com.github.base.APIHelper.addData(APIHelper.java:120)
+	at org.github.tests.ValidateAddUpdateDeleteRepo_Functionality.validateCreateRepoFunctionality(ValidateAddUpdateDeleteRepo_Functionality.java:53)
+	at org.github.tests.ValidateAddUpdateDeleteRepo_Functionality.validateCreateRepoFunc_ExistingRepoName(ValidateAddUpdateDeleteRepo_Functionality.java:88)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(validate add repo funct with existing repo name)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateCreateRepoFunctionality1">
+                  </a> <!-- validateCreateRepoFunctionality1 -->
+                  <span class="method-name">validateCreateRepoFunctionality1</span>
+                  <div class="stack-trace">java.lang.AssertionError: create new repo functionality is failing due to :: Invalid number of path parameters. Expected 0, was 2. Redundant path parameters are: owner=RenuDix, repo=Fakercom.github.javafaker.FunnyName@3b4ef59f.
+	at com.github.base.APIHelper.addData(APIHelper.java:120)
+	at org.github.tests.ValidateAddUpdateDeleteRepo_Functionality.validateCreateRepoFunctionality(ValidateAddUpdateDeleteRepo_Functionality.java:53)
+	at org.github.tests.ValidateAddUpdateDeleteRepo_Functionality.validateCreateRepoFunctionality1(ValidateAddUpdateDeleteRepo_Functionality.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(validate create repo functionality)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDeleteRepo">
+                  </a> <!-- validateDeleteRepo -->
+                  <span class="method-name">validateDeleteRepo</span>
+                  <div class="stack-trace">java.lang.AssertionError: create new repo functionality is failing due to :: Invalid number of path parameters. Expected 0, was 2. Redundant path parameters are: owner=RenuDix, repo=Fakercom.github.javafaker.FunnyName@3b4ef59f.
+	at com.github.base.APIHelper.addData(APIHelper.java:120)
+	at org.github.tests.ValidateAddUpdateDeleteRepo_Functionality.validateCreateRepoFunctionality(ValidateAddUpdateDeleteRepo_Functionality.java:53)
+	at org.github.tests.ValidateAddUpdateDeleteRepo_Functionality.validateDeleteRepo(ValidateAddUpdateDeleteRepo_Functionality.java:143)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(delete repo func)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateUpdateRepoFunctionality">
+                  </a> <!-- validateUpdateRepoFunctionality -->
+                  <span class="method-name">validateUpdateRepoFunctionality</span>
+                  <div class="stack-trace">java.lang.AssertionError: create new repo functionality is failing due to :: Invalid number of path parameters. Expected 0, was 2. Redundant path parameters are: owner=RenuDix, repo=Fakercom.github.javafaker.FunnyName@3b4ef59f.
+	at com.github.base.APIHelper.addData(APIHelper.java:120)
+	at org.github.tests.ValidateAddUpdateDeleteRepo_Functionality.validateCreateRepoFunctionality(ValidateAddUpdateDeleteRepo_Functionality.java:53)
+	at org.github.tests.ValidateAddUpdateDeleteRepo_Functionality.validateUpdateRepoFunctionality(ValidateAddUpdateDeleteRepo_Functionality.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(update repo func)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Suite-class-failed -->
+          <div class="suite-Smoke_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.github.tests.ValidateGetRepo_Functionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateGetRepo_InvalidRepo">
+                  </a> <!-- validateGetRepo_InvalidRepo -->
+                  <span class="method-name">validateGetRepo_InvalidRepo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateGetSingleRepo">
+                  </a> <!-- validateGetSingleRepo -->
+                  <span class="method-name">validateGetSingleRepo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Suite-class-passed -->
+          <div class="suite-Smoke_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">org.github.tests.ValidateAddUpdateDeleteRepo_Functionality</span>
@@ -131,123 +292,190 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Smoke_Suite-class-passed -->
+        </div> <!-- panel Smoke_Suite -->
+        <div panel-name="test-xml-Smoke_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Shanti Tammana\AppData\Local\Temp\testng-eclipse--305919951\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Shanti Tammana\git\repository\GitHubAPIAutomation\src\test\resources\TestNG_XMLs\SmokeSuiteFunctionality.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;Smoke Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.github.listeners.TestEventListenersUtility&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Get repo functionality&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;org.github.tests.ValidateAddUpdateDeleteRepo_Functionality&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;validateDeleteRepo_NonExistentRepo&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- org.github.tests.ValidateAddUpdateDeleteRepo_Functionality --&gt;
+      &lt;class name=&quot;org.github.tests.ValidateGetRepo_Functionality&quot;/&gt;
+      &lt;class name=&quot;org.github.tests.ValidateAddUpdateDeleteRepo_Functionality&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Get repo functionality --&gt;
+&lt;/suite&gt; &lt;!-- Smoke Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Smoke_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Smoke Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Get repo functionality (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Smoke_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Smoke Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Smoke_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Smoke Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Smoke_Suite');
+function tableData_Smoke_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateDeleteRepo_NonExistentRepo')
-data.setCell(0, 2, 'org.github.tests.ValidateAddUpdateDeleteRepo_Functionality')
-data.setCell(0, 3, 2437);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'validateGetAllRepositories')
+data.setCell(0, 2, 'org.github.tests.ValidateGetRepo_Functionality')
+data.setCell(0, 3, 2079);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validateGetRepo_InvalidRepo')
+data.setCell(1, 2, 'org.github.tests.ValidateGetRepo_Functionality')
+data.setCell(1, 3, 742);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateGetSingleRepo')
+data.setCell(2, 2, 'org.github.tests.ValidateGetRepo_Functionality')
+data.setCell(2, 3, 434);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validateDeleteRepo_NonExistentRepo')
+data.setCell(3, 2, 'org.github.tests.ValidateAddUpdateDeleteRepo_Functionality')
+data.setCell(3, 3, 381);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validateCreateRepoFunc_ExistingRepoName')
+data.setCell(4, 2, 'org.github.tests.ValidateAddUpdateDeleteRepo_Functionality')
+data.setCell(4, 3, 220);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validateUpdateRepoFunctionality')
+data.setCell(5, 2, 'org.github.tests.ValidateAddUpdateDeleteRepo_Functionality')
+data.setCell(5, 3, 88);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validateDeleteRepo')
+data.setCell(6, 2, 'org.github.tests.ValidateAddUpdateDeleteRepo_Functionality')
+data.setCell(6, 3, 62);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validateCreateRepoFunctionality1')
+data.setCell(7, 2, 'org.github.tests.ValidateAddUpdateDeleteRepo_Functionality')
+data.setCell(7, 3, 59);
+window.suiteTableData['Smoke_Suite']= { tableData: data, tableDiv: 'times-div-Smoke_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <div id="times-div-Smoke_Suite">
+              </div> <!-- times-div-Smoke_Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Smoke_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Smoke Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Smoke_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">org.github.tests.ValidateAddUpdateDeleteRepo_Functionality</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">validateCreateRepoFunc_ExistingRepoName</span>
-                <br/>
-                <span class="ignored-method-name">validateUpdateRepoFunctionality</span>
-                <br/>
-                <span class="ignored-method-name">validateDeleteRepo</span>
-                <br/>
-                <span class="ignored-method-name">validateCreateRepoFunctionality</span>
+                <span class="ignored-method-name">beforeSuite</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Smoke_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.github.tests.ValidateAddUpdateDeleteRepo_Functionality</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">org.github.tests.ValidateGetRepo_Functionality</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">160 ms</span>
+                <span class="method-start">260 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateGetAllRepositories</span>
+                <span class="method-start">767 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateGetRepo_InvalidRepo</span>
+                <span class="method-start">2871 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateGetSingleRepo</span>
+                <span class="method-start">3615 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.github.tests.ValidateAddUpdateDeleteRepo_Functionality</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">4051 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">validateDeleteRepo_NonExistentRepo</span>
-                <span class="method-start">1044 ms</span>
+                <span class="method-start">4053 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateCreateRepoFunc_ExistingRepoName</span>
+                <span class="method-start">4436 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateCreateRepoFunctionality1</span>
+                <span class="method-start">4658 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateDeleteRepo</span>
+                <span class="method-start">4721 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateUpdateRepoFunctionality</span>
+                <span class="method-start">4787 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

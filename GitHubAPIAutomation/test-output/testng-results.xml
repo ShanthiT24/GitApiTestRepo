@@ -1,25 +1,254 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="9" passed="3" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-20T08:49:06 PDT" name="Default suite" finished-at="2024-03-20T08:49:09 PDT" duration-ms="3361">
+  <suite started-at="2024-03-31T20:50:13 PDT" name="Smoke Suite" finished-at="2024-03-31T20:50:17 PDT" duration-ms="4866">
     <groups>
     </groups>
-    <test started-at="2024-03-20T08:49:06 PDT" name="Default test" finished-at="2024-03-20T08:49:09 PDT" duration-ms="3361">
-      <class name="org.github.tests.ValidateAddUpdateDeleteRepo_Functionality">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:org.github.tests.ValidateAddUpdateDeleteRepo_Functionality@31c88ec8]" started-at="2024-03-20T08:49:06 PDT" name="beforeSuite" finished-at="2024-03-20T08:49:06 PDT" duration-ms="122" status="PASS">
+    <test started-at="2024-03-31T20:50:13 PDT" name="Get repo functionality" finished-at="2024-03-31T20:50:17 PDT" duration-ms="4866">
+      <class name="org.github.tests.ValidateGetRepo_Functionality">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:org.github.tests.ValidateGetRepo_Functionality@56f0cc85]" started-at="2024-03-31T20:50:13 PDT" name="beforeSuite" finished-at="2024-03-31T20:50:13 PDT" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:org.github.tests.ValidateAddUpdateDeleteRepo_Functionality@31c88ec8]" started-at="2024-03-20T08:49:06 PDT" name="beforeClass" finished-at="2024-03-20T08:49:07 PDT" duration-ms="875" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:org.github.tests.ValidateGetRepo_Functionality@56f0cc85]" started-at="2024-03-31T20:50:13 PDT" name="beforeClass" finished-at="2024-03-31T20:50:13 PDT" duration-ms="496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="validateDeleteRepo_NonExistentRepo()[pri:0, instance:org.github.tests.ValidateAddUpdateDeleteRepo_Functionality@31c88ec8]" started-at="2024-03-20T08:49:07 PDT" name="validateDeleteRepo_NonExistentRepo" finished-at="2024-03-20T08:49:09 PDT" duration-ms="2437" status="PASS">
+        <test-method signature="validateGetAllRepositories()[pri:0, instance:org.github.tests.ValidateGetRepo_Functionality@56f0cc85]" started-at="2024-03-31T20:50:13 PDT" name="validateGetAllRepositories" finished-at="2024-03-31T20:50:15 PDT" duration-ms="2079" status="FAIL">
+          <exception class="org.json.JSONException">
+            <message>
+              <![CDATA[A JSONObject text must begin with '{' at 1 [character 2 line 1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+at org.json.JSONTokener.syntaxError(JSONTokener.java:433)
+at org.json.JSONObject.<init>(JSONObject.java:195)
+at org.github.utils.JsonSchemaValidate.validateSchema(JsonSchemaValidate.java:23)
+at org.github.tests.ValidateGetRepo_Functionality.validateGetAllRepositories(ValidateGetRepo_Functionality.java:83)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.json.JSONException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateGetAllRepositories -->
+        <test-method signature="validateGetRepo_InvalidRepo()[pri:0, instance:org.github.tests.ValidateGetRepo_Functionality@56f0cc85]" started-at="2024-03-31T20:50:15 PDT" name="validateGetRepo_InvalidRepo" finished-at="2024-03-31T20:50:16 PDT" duration-ms="742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateGetRepo_InvalidRepo -->
+        <test-method signature="validateGetSingleRepo()[pri:0, instance:org.github.tests.ValidateGetRepo_Functionality@56f0cc85]" started-at="2024-03-31T20:50:16 PDT" name="validateGetSingleRepo" finished-at="2024-03-31T20:50:17 PDT" duration-ms="434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateGetSingleRepo -->
+      </class> <!-- org.github.tests.ValidateGetRepo_Functionality -->
+      <class name="org.github.tests.ValidateAddUpdateDeleteRepo_Functionality">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:org.github.tests.ValidateAddUpdateDeleteRepo_Functionality@62e20a76]" started-at="2024-03-31T20:50:17 PDT" name="beforeClass" finished-at="2024-03-31T20:50:17 PDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="validateDeleteRepo_NonExistentRepo()[pri:0, instance:org.github.tests.ValidateAddUpdateDeleteRepo_Functionality@62e20a76]" started-at="2024-03-31T20:50:17 PDT" name="validateDeleteRepo_NonExistentRepo" finished-at="2024-03-31T20:50:17 PDT" duration-ms="381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateDeleteRepo_NonExistentRepo -->
+        <test-method signature="validateCreateRepoFunc_ExistingRepoName()[pri:1, instance:org.github.tests.ValidateAddUpdateDeleteRepo_Functionality@62e20a76]" started-at="2024-03-31T20:50:17 PDT" name="validateCreateRepoFunc_ExistingRepoName" description="validate add repo funct with existing repo name" finished-at="2024-03-31T20:50:17 PDT" duration-ms="220" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[create new repo functionality is failing due to :: Invalid number of path parameters. Expected 0, was 2. Redundant path parameters are: owner=RenuDix, repo=Fakercom.github.javafaker.FunnyName@3b4ef59f.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: create new repo functionality is failing due to :: Invalid number of path parameters. Expected 0, was 2. Redundant path parameters are: owner=RenuDix, repo=Fakercom.github.javafaker.FunnyName@3b4ef59f.
+at org.testng.Assert.fail(Assert.java:97)
+at com.github.base.APIHelper.addData(APIHelper.java:120)
+at org.github.tests.ValidateAddUpdateDeleteRepo_Functionality.validateCreateRepoFunctionality(ValidateAddUpdateDeleteRepo_Functionality.java:53)
+at org.github.tests.ValidateAddUpdateDeleteRepo_Functionality.validateCreateRepoFunc_ExistingRepoName(ValidateAddUpdateDeleteRepo_Functionality.java:88)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateRepoFunc_ExistingRepoName -->
+        <test-method signature="validateCreateRepoFunctionality1()[pri:1, instance:org.github.tests.ValidateAddUpdateDeleteRepo_Functionality@62e20a76]" started-at="2024-03-31T20:50:17 PDT" name="validateCreateRepoFunctionality1" description="validate create repo functionality" finished-at="2024-03-31T20:50:17 PDT" duration-ms="59" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[create new repo functionality is failing due to :: Invalid number of path parameters. Expected 0, was 2. Redundant path parameters are: owner=RenuDix, repo=Fakercom.github.javafaker.FunnyName@3b4ef59f.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: create new repo functionality is failing due to :: Invalid number of path parameters. Expected 0, was 2. Redundant path parameters are: owner=RenuDix, repo=Fakercom.github.javafaker.FunnyName@3b4ef59f.
+at org.testng.Assert.fail(Assert.java:97)
+at com.github.base.APIHelper.addData(APIHelper.java:120)
+at org.github.tests.ValidateAddUpdateDeleteRepo_Functionality.validateCreateRepoFunctionality(ValidateAddUpdateDeleteRepo_Functionality.java:53)
+at org.github.tests.ValidateAddUpdateDeleteRepo_Functionality.validateCreateRepoFunctionality1(ValidateAddUpdateDeleteRepo_Functionality.java:79)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateRepoFunctionality1 -->
+        <test-method signature="validateDeleteRepo()[pri:1, instance:org.github.tests.ValidateAddUpdateDeleteRepo_Functionality@62e20a76]" started-at="2024-03-31T20:50:17 PDT" name="validateDeleteRepo" description="delete repo func" finished-at="2024-03-31T20:50:17 PDT" duration-ms="62" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[create new repo functionality is failing due to :: Invalid number of path parameters. Expected 0, was 2. Redundant path parameters are: owner=RenuDix, repo=Fakercom.github.javafaker.FunnyName@3b4ef59f.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: create new repo functionality is failing due to :: Invalid number of path parameters. Expected 0, was 2. Redundant path parameters are: owner=RenuDix, repo=Fakercom.github.javafaker.FunnyName@3b4ef59f.
+at org.testng.Assert.fail(Assert.java:97)
+at com.github.base.APIHelper.addData(APIHelper.java:120)
+at org.github.tests.ValidateAddUpdateDeleteRepo_Functionality.validateCreateRepoFunctionality(ValidateAddUpdateDeleteRepo_Functionality.java:53)
+at org.github.tests.ValidateAddUpdateDeleteRepo_Functionality.validateDeleteRepo(ValidateAddUpdateDeleteRepo_Functionality.java:143)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDeleteRepo -->
+        <test-method signature="validateUpdateRepoFunctionality()[pri:1, instance:org.github.tests.ValidateAddUpdateDeleteRepo_Functionality@62e20a76]" started-at="2024-03-31T20:50:17 PDT" name="validateUpdateRepoFunctionality" description="update repo func" finished-at="2024-03-31T20:50:17 PDT" duration-ms="88" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[create new repo functionality is failing due to :: Invalid number of path parameters. Expected 0, was 2. Redundant path parameters are: owner=RenuDix, repo=Fakercom.github.javafaker.FunnyName@3b4ef59f.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: create new repo functionality is failing due to :: Invalid number of path parameters. Expected 0, was 2. Redundant path parameters are: owner=RenuDix, repo=Fakercom.github.javafaker.FunnyName@3b4ef59f.
+at org.testng.Assert.fail(Assert.java:97)
+at com.github.base.APIHelper.addData(APIHelper.java:120)
+at org.github.tests.ValidateAddUpdateDeleteRepo_Functionality.validateCreateRepoFunctionality(ValidateAddUpdateDeleteRepo_Functionality.java:53)
+at org.github.tests.ValidateAddUpdateDeleteRepo_Functionality.validateUpdateRepoFunctionality(ValidateAddUpdateDeleteRepo_Functionality.java:122)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUpdateRepoFunctionality -->
       </class> <!-- org.github.tests.ValidateAddUpdateDeleteRepo_Functionality -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Get repo functionality -->
+  </suite> <!-- Smoke Suite -->
 </testng-results>

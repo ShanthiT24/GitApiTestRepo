@@ -4,15 +4,25 @@
   <listeners>
     <listener class-name="org.github.listeners.TestEventListenersUtility"/>
   </listeners>
-  <test thread-count="5" name="put data functionality(failed)">
+  <test thread-count="5" name="Get repo functionality(failed)">
     <classes>
       <class name="org.github.tests.ValidateGetRepo_Functionality">
         <methods>
           <include name="beforeClass"/>
-          <include name="validateGetRepo_InvalidRepo"/>
           <include name="beforeSuite"/>
+          <include name="validateGetAllRepositories"/>
         </methods>
       </class> <!-- org.github.tests.ValidateGetRepo_Functionality -->
+      <class name="org.github.tests.ValidateAddUpdateDeleteRepo_Functionality">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="validateCreateRepoFunc_ExistingRepoName"/>
+          <include name="validateCreateRepoFunctionality1"/>
+          <include name="validateUpdateRepoFunctionality"/>
+          <include name="validateDeleteRepo"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- org.github.tests.ValidateAddUpdateDeleteRepo_Functionality -->
     </classes>
-  </test> <!-- put data functionality(failed) -->
+  </test> <!-- Get repo functionality(failed) -->
 </suite> <!-- Failed suite [Smoke Suite] -->

@@ -5,15 +5,20 @@
         <listener class-name="org.github.listeners.TestEventListenersUtility"></listener>
     </listeners>
     
-      <test thread-count="5" name="put data functionality">
+      <test thread-count="1" name="Get repo functionality">
         <classes>
             <class name="org.github.tests.ValidateGetRepo_Functionality"/>
+            <class name="org.github.tests.ValidateAddUpdateDeleteRepo_Functionality"/>
         </classes>
     </test>
-    <test thread-count="5" name="Add data and delete data functionality">
+    
+    <!-- 
+    <test thread-count="1" name="Add Update delete repo functionality">
         <classes>
             <class name="org.github.tests.ValidateAddUpdateDeleteRepo_Functionality"/>
         </classes>
     </test>
+    
+    -->
     
 </suite> 

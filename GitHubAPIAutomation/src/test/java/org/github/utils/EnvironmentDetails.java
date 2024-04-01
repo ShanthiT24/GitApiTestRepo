@@ -20,4 +20,10 @@ public class EnvironmentDetails {
     public static String getProperty(String propertyName) {
         return prop.getProperty(propertyName);
     }
+
+	public static void setProperty(String string) {
+		// TODO Auto-generated method stub
+		prop.setProperty("repoName",string);
+		
+	}
 }

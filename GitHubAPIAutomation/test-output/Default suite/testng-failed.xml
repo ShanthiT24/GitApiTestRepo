@@ -6,8 +6,8 @@
       <class name="org.github.tests.ValidateAddUpdateDeleteRepo_Functionality">
         <methods>
           <include name="beforeSuite"/>
+          <include name="validateDeleteRepo"/>
           <include name="beforeClass"/>
-          <include name="validateDeleteRepo_NonExistentRepo"/>
         </methods>
       </class> <!-- org.github.tests.ValidateAddUpdateDeleteRepo_Functionality -->
     </classes>

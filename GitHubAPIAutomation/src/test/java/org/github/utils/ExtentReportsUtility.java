@@ -33,17 +33,20 @@ public class ExtentReportsUtility {
 		spark = new ExtentSparkReporter(Constants.EXTENT_REPORT_FILE);
 		report.setSystemInfo("Host Name", "Salesforce");
 		report.setSystemInfo("Environment", "QA");
-		report.setSystemInfo("User Name", "Divyashree");
+		report.setSystemInfo("User Name", "ShanthiT.");
 		
 		spark.config().setDocumentTitle("Test Execution Report");
-		spark.config().setReportName("firebase regression tests");
+		spark.config().setReportName("GitHub API tests");
 		spark.config().setTheme(Theme.DARK);
+
 		report.attachReporter(spark);	
 	}
 	
 	public void startSingleTestReport(String methodName) {
+		//System.out.println("Inside startSingleTestReport: "+methodName);
 		testLogger=report.createTest(methodName);
 	}
+	
 	public void endReport() {
 		report.flush();
 	}

@@ -9,8 +9,11 @@ public class TestEventListenersUtility implements ITestListener {
 	private static ExtentReportsUtility extentUtilityObject;
 
 	@Override
-	public void onTestStart(ITestResult result) { // before every @Test method called this method is executed
-		extentUtilityObject.startSingleTestReport(result.getMethod().getMethodName());	
+	public void onTestStart(ITestResult result) {
+		// before every @Test method called this method is executed
+		//System.out.println("Shanthi Extent report" + result.getMethod().getMethodName() );
+		extentUtilityObject.startSingleTestReport(result.getMethod().getMethodName());
+		
 	}
 
 	@Override

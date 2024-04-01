@@ -22,6 +22,11 @@ public class AddDataRequest {
     public String description;
     @JsonProperty(value = "homepage")
     public String homepage;
-   // @JsonProperty(value = "private")
-    //public String privateval;
+    @JsonProperty(value = "private")
+    public boolean privateval;
+    
+    
+    
+    
 }
+
